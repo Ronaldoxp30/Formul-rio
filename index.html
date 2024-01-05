@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <style>
+    
+   
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    body{
+        background-image: url(img/imagem.jpg.jpeg);
+    }
+     
+  </style>
+  
+</head>
+<body>
+
+  <form action="mailto:https://wa.me/ronaldosilvadossantos140@gmail.com"method="post"enctype="text/plain">
+    <label for="dataHoraInicial">Data e Hora Inicial:</label>
+    <input type="datetime-local" id="dataHoraInicial" name="dataHoraInicial" required>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="diagnostico">Diagnóstico:</label>
+    <textarea id="diagnostico" name="diagnostico" rows="4" required></textarea>
+
+    <label for="servicosRealizados">Serviços Realizados:</label>
+    <textarea id="servicosRealizados" name="servicosRealizados" rows="4" required></textarea>
+
+    <label for="dataHoraFinal">Data e Hora Final:</label>
+    <input type="datetime-local" id="dataHoraFinal" name="dataHoraFinal" required>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
